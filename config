@@ -124,7 +124,6 @@
 	format         = <label>
 	format-padding = 0
 
-	label-background = ${colors.bg}
 	label-foreground = ${colors.fg}
 	label-padding    = 4
 
