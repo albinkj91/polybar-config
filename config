@@ -84,11 +84,18 @@
 	label-charging-foreground = ${colors.fg}
 	label-charging-padding    = 1
 
-	format-discharging = <label-discharging>
+	format-discharging = <ramp-capacity> <label-discharging>
 
-	label-discharging			 =  %percentage%%
+	label-discharging			 = %percentage%%
 	label-discharging-foreground = ${colors.fg}
 	label-discharging-padding    = 1
+
+	ramp-capacity-0			   = 
+	ramp-capacity-0-foreground = ${colors.battery_fg_low}
+	ramp-capacity-1			   =  
+	ramp-capacity-2			   = 
+	ramp-capacity-3			   = 
+	ramp-capacity-4			   = 
 
 	format-full = <label-full>
 
