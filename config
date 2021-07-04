@@ -6,9 +6,9 @@
 	bg = #1c1923
 	fg = #f6e9e3
 
-	battery_fg = #5f659c
-	battery_fg_low = #e95353
-	cpu_fg = #fbd1d0
+	battery-fg = #b6a5c8
+	battery-fg-low = #e95353
+	cpu-fg = #fbd1d0
 	ram_fg = #9cbefe
 
 ;--------------------------------------------
@@ -17,7 +17,7 @@
 
 [bar/nordic]
 	width    = 100%
-	height   = 32 
+	height   = 40
 	offset-x = 0
 	offset-y = 0
 
@@ -59,7 +59,7 @@
 
 	format           = <label>
 	label            =  %percentage%%
-	label-foreground = ${colors.cpu_fg}
+	label-foreground = ${colors.cpu-fg}
 	label-padding    = 1
 
 [module/ram]
@@ -81,17 +81,18 @@
 	format-charging = <label-charging>
 
 	label-charging            =  %percentage%%
-	label-charging-foreground = ${colors.fg}
+	label-charging-foreground = ${colors.battery-fg}
 	label-charging-padding    = 1
 
 	format-discharging = <ramp-capacity> <label-discharging>
 
 	label-discharging			 = %percentage%%
-	label-discharging-foreground = ${colors.fg}
+	label-discharging-foreground = ${colors.battery-fg}
 	label-discharging-padding    = 1
 
+	ramp-capacity-foreground   = ${colors.battery-fg}
 	ramp-capacity-0			   = 
-	ramp-capacity-0-foreground = ${colors.battery_fg_low}
+	ramp-capacity-0-foreground = ${colors.battery-fg-low}
 	ramp-capacity-1			   =  
 	ramp-capacity-2			   = 
 	ramp-capacity-3			   = 
@@ -100,7 +101,7 @@
 	format-full = <label-full>
 
 	label-full            =  %percentage%%
-	label-full-foreground = ${colors.fg}
+	label-full-foreground = ${colors.battery-fg}
 	label-full-padding    = 1
 
 [module/network]
